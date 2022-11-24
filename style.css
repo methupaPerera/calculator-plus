@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-dark: #2C3333;
+    --color-dark-variant: #395B64;
+    --color-black: #141414;
+    --color-light: #A5C9CA;
+    --color-light-variant: #E7F6F2;
+    --color-light-variant-transparent: #e7f6f25e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-dark);
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Stylings for the calculator body */
+
+.calBody {
+    margin: auto;
+    width: 20rem;
+    height: 32rem;
+    background-color: var(--color-dark-variant);
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem var(--color-black);
+}
+
+.calTop {
+    padding: 1rem;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--color-black);
+    border-radius: 2rem 2rem 1rem 1rem;
+    color: var(--color-light);
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+/* Stylings for the calculator features */
+
+.calBottom {
+    padding: 0.5rem;
+}
+
+.firstLine, .secLine, .thirdLine, .fourthLine, .fifthLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calBottom p {
+    font-weight: 600;
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: var(--color-dark);
+    border-radius: 0.5rem;
+    color: var(--color-light);
+    transition: 0.15s;
+}
+
+.calBottom p:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+p.leftButton {
+    width: 7.2rem;
+}
+
+/* Stylings for the Cal+ Section */
+
+.plusFeature {
+    display: none;
+    color: var(--color-black);
+    animation: plusFeature 0.5s;
+}
+
+@keyframes plusFeature {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.plusFeature h4 {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.inputs {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.inputs div {
+    margin-bottom: 0.5rem;
+}
+
+.inputs input {
+    font-weight: 800;
+    color: var(--color-black);
+    text-align: end;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--color-light);
+    border-radius: 0.5rem;
+    height: 1.9rem;
+    width: 90%;
+    transition: 0.2s;
+}
+
+.inputs input:focus {
+    outline: 4px solid var(--color-light-variant-transparent);
+}
+
+.plusFeatureButtons p {
+    margin: 0.2rem auto;
+    width: 8rem;
+}

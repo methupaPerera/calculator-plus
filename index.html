@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Icons CDN 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    -->
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calBody">
+        <div class="innerContent">
+            <!-- This is the the display of the calculator -->
+            <div class="calTop">
+                <p class="screen">
+                    <span class="operation"></span>&nbsp;
+                    <span class="backspace"><i class="bi bi-backspace-fill"></i></span>
+                </p>
+            </div>
+
+            <!-- This is the area that contains all other elements in the calculator-->
+            <div class="calBottom">
+                <!-- This will add all usual features of a simple calculator -->
+                <div class="normalFeatures">
+                    <div class="firstLine">
+                        <p class="leftButton calPlus">Cal+</p>
+                        <p class="clear">C</p>
+                        <p class="plus">+</p>
+                    </div>
+
+                    <div class="secLine">
+                        <p class="one">1</p>
+                        <p class="two">2</p>
+                        <p class="three">3</p>
+                        <p class="minus">-</p>
+                    </div>
+
+                    <div class="thirdLine">
+                        <p class="four">4</p>
+                        <p class="five">5</p>
+                        <p class="six">6</p>
+                        <p class="multiple">x</p>
+                    </div>
+
+                    <div class="fourthLine">
+                        <p class="seven">7</p>
+                        <p class="eight">8</p>
+                        <p class="nine">9</p>
+                        <p class="equal">=</p>
+                    </div>
+                    <div class="fifthLine">
+                        <p class="leftButton zero">0</p>
+                        <p class="exponation">^</p>
+                        <p class="divide">/</p>
+                    </div>
+                </div>
+
+                <!-- This will add the Calculator+ Feature, which is calculating compound Interest-->
+                <div class="plusFeature">
+                    <h4>Compound Interest</h4>
+
+                    <div class="inputs">
+                        <div>
+                            <label for="rate">Rate</label>
+                            <input type="text" id="rate">
+                        </div>
+
+                        <div>
+                            <label for="time">Period (Years)</label>
+                            <input type="text" id="time">
+                        </div>
+
+                        <div>
+                            <label for="amount">Amount</label>
+                            <input type="text" id="amount">
+                        </div>
+                    </div>
+
+                    <div class="plusFeatureButtons">
+                        <p class="calculate">Calculate</p>
+                        <p class="standard">Standard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript Files -->
+    <script src="main.js"></script>
+</body>
+</html>
